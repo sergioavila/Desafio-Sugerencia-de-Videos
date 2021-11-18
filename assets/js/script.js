@@ -32,8 +32,9 @@ class Reproductor extends Multimedia{
 const Player = (() => {
     const loadVideo = (url, id) => {
                 var iframe = document.getElementById( id )
-                console.log(iframe)
+                console.log(url)
                 iframe.setAttribute = ('src' , url)
+                console.log(iframe)
             }
             const call = (url, id) => {
                 loadVideo(url, id)
