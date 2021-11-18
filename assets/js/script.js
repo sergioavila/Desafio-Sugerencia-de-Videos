@@ -20,7 +20,6 @@ class Reproductor extends Multimedia{
 
     playMultimedia(){
         Player(this._url, this._id);
-        console.log(this._id, this._url)
     }
 
     setInicio(time) {
@@ -32,9 +31,9 @@ class Reproductor extends Multimedia{
 const Player = (() => {
     const loadVideo = (url, id) => {
                 var iframe = document.getElementById( id )
-                console.log(url)
+                console.log('URL: ',url)
                 iframe.setAttribute = ('src' , url)
-                console.log(iframe)
+                console.log('IFRAME: ',iframe)
             }
             const call = (url, id) => {
                 loadVideo(url, id)
