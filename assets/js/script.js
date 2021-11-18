@@ -43,15 +43,15 @@ const Player = (() => {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     //Música
-    let musica = new Reproductor("https://www.youtube.com/embed/qgaRVvAKoqQ", "musica")
+    let musica = new Reproductor("musica", "https://www.youtube.com/embed/qgaRVvAKoqQ")
     musica.playMultimedia()
     musica.setInicio(200)
 
     //Película
-    let pelicula = new Reproductor("https://www.youtube.com/embed/ovcaSUhcC1s", "peliculas")
+    let pelicula = new Reproductor("peliculas", "https://www.youtube.com/embed/ovcaSUhcC1s")
     pelicula.playMultimedia()
 
     //Serie
-    let serie = new Reproductor("https://www.youtube.com/embed/eW7Twd85m2g", "series")
+    let serie = new Reproductor("series", "https://www.youtube.com/embed/eW7Twd85m2g")
     serie.playMultimedia()
 })
