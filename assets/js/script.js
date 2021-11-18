@@ -41,7 +41,7 @@ const Player = (() => {
         return call
     })()
 
-document.addEventListener("DOMContentLoaded", function(event) {
+
     //Música
     let musica = new Reproductor("musica", "https://www.youtube.com/embed/qgaRVvAKoqQ")
     musica.playMultimedia()
@@ -54,4 +54,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //Serie
     let serie = new Reproductor("series", "https://www.youtube.com/embed/eW7Twd85m2g")
     serie.playMultimedia()
-})
